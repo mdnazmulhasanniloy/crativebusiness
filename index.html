@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./asset/css/slick.css">
+    <link rel="stylesheet" href="./asset/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/venobox.min.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+
+    <style>
+        .input-effect {
+            position: relative;
+            width: 100%;
+        }
+
+        .effect-17 {
+            color: #F04E4C;
+            font-family: monospace;
+            width: 70%;
+            border: 0;
+            padding: 4px 0;
+            border-bottom: 1px solid rgb(77, 77, 77);
+            background-color: transparent;
+            transition: all linear .3s;
+        }
+
+        .effect-17~.focus-border {
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #F04E4C;
+            transition: 0.4s;
+            z-index: 111;
+        }
+
+        .effect-17:focus {
+            border-bottom: none;
+        }
+
+        .effect-17:focus~.focus-border,
+        .has-content.effect-17~.focus-border {
+            width: 70%;
+            transition: 0.4s;
+            left: 0;
+        }
+
+        .effect-17~label {
+            position: absolute;
+            left: 0;
+            width: auto;
+            top: 9px;
+            color: red;
+            transition: 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .effect-17:focus~label,
+        .has-content.effect-17~label {
+            top: -20px;
+            left: -10px;
+            font-size: 12px !important;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navber">
+    <!-- =========================================================================  
+       navver start
+==================================================================================== -->
+    <nav id="navbar" class="navbar  navbar-expand-md main-manu p-0 navigation">
+        <div class="container px-0">
+            <div class="companylogo">
+                <a href=""><img src="asset/image/header/Vector.png" alt="Company logo"></a>
+            </div>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse pera kopal  navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#concern">OUR CONCERNS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CSR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- =========================================================================  
+           navver start
+==================================================================================== -->
+    <!-- =========================================================================  
+                              main part start
+==================================================================================== -->
+    <main>
+        <!-- =========================================================================  
+                              header part start
+==================================================================================== -->
+        <header id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 baner-first order-1 order-lg-0">
+                        <h1>WE ARE PIONEER <br>
+                            IN COMPUTER <br>
+                            TECHNOLOGY</h1>
+                        <p>As technology continues to grow, more tech trends will continue to shape our future. We need
+                            to monitor these trends and continue to up skill to stay with the trends.</p>
+                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 baner-photo order-0 order-lg-1">
+                        <img class="n-b w-100 img-fluid" src="./asset/image/banner/Group 1.png" alt="">
+                        <div class="play">
+                            <a class="venobox" data-autoplay="true" data-type="video"
+                                href="https://youtu.be/b8s0DSQJ9Hk"><i class="bi bi-play-fill"></i></a>
+                        </div>
+                        <img class="ban-phot"  src="./asset/image/banner/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>   
+        </header>
+        <!-- =========================================================================  
+                              header part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                              history part  start
+==================================================================================== -->
+        <section id="history">
+            <div class="photo">
+                <img class="img-pos" src="./asset/image/about/Vector.png" alt="">
+                <div class="photo-1">
+                    <img src="./asset/image/about/unsplash_Nl_FMFpXo2g.png" class="w-100 img-fluid" alt="">
+
+                </div>
+                <div class="photo-2">
+                    <img src="./asset/image/about/unsplash_Nl_FMFpXo2g.png" class="w-100 img-fluid" alt="">
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-lg-5 offset-lg-7 history-text mt-auto">
+                    <p>We started back in 2008. Since then, we have been travelling towards one goal creating a supreme
+                        experience for our clients.
+
+                        <span>
+                            In order to achieve our goal, we are committed to making an effort at both domestic and
+                            International markets.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             history part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                             sister part start
+==================================================================================== -->
+        <section id="concern" class="position-relative">
+            <img class="position-absolute jhth" style="z-index: -1; height: 550px; left: 0; top: -24%;"
+                src="./asset/image/concern/fdkld.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 sister-text">
+                        <h2>
+                            OUR SISTER <br>
+                            CONCERNS
+                        </h2>
+                        <p>
+                            We have expanded our services to different sets to meet the demand of time. Under the same
+                            roof, you will get everything that you need to succeed. Our skilled team is always
+                            determined to be by your side.
+                        </p>
+                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 s-p">
+                        <ul class="d-flex flex-wrap">
+                            <li><img src="./asset/image/concern/Frame.png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (1).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (10).png" class="img-fluid w-100" alt="logo">
+                            </li>
+                            <li><img src="./asset/image/concern/Vector (2).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (3).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (4).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (5).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (6).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (7).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (7).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (8).png" class="img-fluid w-100" alt="logo"></li>
+                            <li><img src="./asset/image/concern/Vector (9).png" class="img-fluid w-100" alt="logo"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             sister part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                             chairman part end
+==================================================================================== -->
+        <section id="shairman">
+
+            <div class="slider" style="width: 100%;">
+
+                <div class="row d-flex">
+                    <div class="col-lg-6 col-12">
+                        <div class="sli-img">
+                            <img src="./asset/image/chair/Monir-hossen 1.png" class="img-fluid w-100"
+                            alt="Monir-hossen-photo">
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-6 shair-text col-12">
+                        <img class="samclon" src="./asset/image/chair/“.png" alt="">
+                        <p>
+                            Creative IT Institute has been working tirelessly since 2008 with the aim of creating
+                            skilled
+                            human
+                            resources in the technology sector at home and abroad. With the passage of time, we have
+                            enriched
+                            ourselves with new 10 concerns and turned into agroup of companies. We are creating global
+                            skilled
+                            manpower in the ICT sector as needed and contributing to the country’s economic growth.
+                            Along
+                            with
+                            the development of ICT, new job opportunities are being created constantly worldwide. We are
+                            determined to meet the challenges of the Fourth Industrial Revolution.
+                        </p>
+                        <h2>
+                            MONIR HOSEN
+                        </h2>
+                        <span>Chairman, Creative Business Group</span>
+
+                        <img src="./asset/image/chair/fgg.png" class="drag-butt" alt="brug-button">
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-lg-6 col-12">
+                        <div class="sli-img">
+                            <img src="./asset/image/chair/Monir-hossen 1.png" class="img-fluid w-100"
+                            alt="Monir-hossen-photo">
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-6 shair-text col-12">
+                        <img class="samclon" src="./asset/image/chair/“.png" alt="">
+                        <p>
+                            Creative IT Institute has been working tirelessly since 2008 with the aim of creating
+                            skilled
+                            human
+                            resources in the technology sector at home and abroad. With the passage of time, we have
+                            enriched
+                            ourselves with new 10 concerns and turned into agroup of companies. We are creating global
+                            skilled
+                            manpower in the ICT sector as needed and contributing to the country’s economic growth.
+                            Along
+                            with
+                            the development of ICT, new job opportunities are being created constantly worldwide. We are
+                            determined to meet the challenges of the Fourth Industrial Revolution.
+                        </p>
+                        <h2>
+                            MONIR HOSEN
+                        </h2>
+                        <span>Chairman, Creative Business Group</span>
+
+                        <img src="./asset/image/chair/fgg.png" class="drag-butt" alt="brug-button">
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-lg-6 col-12">
+                        <div class="sli-img">
+                            <img src="./asset/image/chair/Monir-hossen 1.png" class="img-fluid w-100"
+                            alt="Monir-hossen-photo">
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-6 shair-text col-12">
+                        <img class="samclon" src="./asset/image/chair/“.png" alt="">
+                        <p>
+                            Creative IT Institute has been working tirelessly since 2008 with the aim of creating
+                            skilled
+                            human
+                            resources in the technology sector at home and abroad. With the passage of time, we have
+                            enriched
+                            ourselves with new 10 concerns and turned into agroup of companies. We are creating global
+                            skilled
+                            manpower in the ICT sector as needed and contributing to the country’s economic growth.
+                            Along
+                            with
+                            the development of ICT, new job opportunities are being created constantly worldwide. We are
+                            determined to meet the challenges of the Fourth Industrial Revolution.
+                        </p>
+                        <h2>
+                            MONIR HOSEN
+                        </h2>
+                        <span>Chairman, Creative Business Group</span>
+
+                        <img src="./asset/image/chair/fgg.png" class="drag-butt" alt="brug-button">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             chairman part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                             counter part start
+==================================================================================== -->
+        <section id="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6  content d-flex">
+                            <div class="logo">
+                                <img src="./asset/image/counter/Group 10100.png" alt="">
+                            </div>
+                            <ul>
+                                <li>Since</li>
+                                <li class="counUp">2008</li>
+                            </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 content d-flex">
+                        
+                            <div class="logo">
+                                <img src="./asset/image/counter/Group 14.png" alt="">
+                            </div>
+                            <ul>
+                                <li>Concerns</li>
+                                <li><span class="counUp">13</span>+</li>
+                            </ul>
+                       
+                    </div>
+                    <div class="col-lg-3 col-md-6 content d-flex">
+                        
+                            <div class="logo">
+                                <img src="./asset/image/counter/Vector (Stroke) (1).png" alt="">
+                            </div>
+                            <ul>
+                                <li>Employees</li>
+                                <li><span class="counUp">600</span>+</li>
+                            </ul>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 content d-flex">
+                        
+                            <div class="logo">
+                                <img src="./asset/image/counter/Vector (Stroke) (1).png" alt="">
+                            </div>
+                            <ul>
+                                <li>Awards</li>
+                                <li><span class="counUp">25</span>+</li>
+                            </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             counter part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                             awards part start
+==================================================================================== -->
+        <section id="awards">
+            <div class="container">
+                <div class="header-award text-center">
+                    <h2>AWARDS</h2>
+                    <p>Do you want to keep yourself updated? CBG is pleased to share what is up to next with
+                        <br> the latest updates, events and more.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="cards">
+                            <div class="photo text-center"
+                                style="background: url('./asset/image/awards/Vector1.png') no-repeat center;">
+                                <img src="./asset/image/awards/IMG_9572.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>Received</p>
+                                <h5 style="padding-right: 20px;"><a href="">
+                                        jci bangladesh
+                                        TOYP-2021
+                                        AWARD
+                                    </a></h5>
+                                <span>As Young Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="cards">
+                            <div class="photo text-center"
+                                style="background: url('./asset/image/awards/Vector1.png') no-repeat center;">
+                                <img src="./asset/image/awards/IMG_9562.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>Received</p>
+                                <h5><a href="">basis outsourcing
+                                        award</a></h5>
+                                <span>for Best Outsourcing Company</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="cards">
+                            <div class="photo text-center"
+                                style="background: url('./asset/image/awards/Vector1.png') no-repeat center;">
+                                <img src="./asset/image/awards/IMG_9575.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>Received</p>
+                                <h5><a href="">
+                                        SME
+                                        Entrepreneur
+                                        Award
+                                    </a></h5>
+                                <span>for Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="cards">
+                            <div class="photo text-center"
+                                style="background: url('./asset/image/awards/Vector1.png') no-repeat center;">
+                                <img src="./asset/image/awards/IMG_9569.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>Received</p>
+                                <h5><a href="">mohammad
+                                        yousuf howdhury
+                                        award 2020</a></h5>
+                                <span>for Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center mt-5">
+                    <a href="" class="btn m-auto"
+                        style="background-color:#4978BC; width: 200px; font-size: 25px; font-weight: 600;color: #fff; border-radius: 0px !important;">EXPLORE</a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             awards part end
+==================================================================================== -->
+        <!-- =========================================================================  
+                             news event part end
+==================================================================================== -->
+        <section id="news-part">
+            <div class="container">
+                <div class="header-part text-center">
+                    <h2>NEWS & EVENTS</h2>
+                    <p>Do you want to keep yourself updated? CBG is pleased to share what is up to next with
+                        <br> the latest updates, events and more.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 news-part">
+                        <div class="photo">
+                            <img src="./asset/image/news/DSC09445 1.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="text">
+                            <ul class="d-flex">
+                                <li class="after-for">07.12.2022</li>
+                                <li> Creative IT Institute</li>
+                            </ul>
+                            <h3>
+                                Diners Club Macedonia partners with cbg group
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-part">
+                        <div class="photo">
+                            <img src="./asset/image/news/DSC09513 1.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="text">
+                            <ul class="d-flex">
+                                <li class="after-for">07.12.2022</li>
+                                <li> Creative IT Institute</li>
+                            </ul>
+                            <h3>
+                                Creating bespoke rope & webbing products
+                            </h3>
+                        </div>
+                        <div class="play">
+                            <a href=""> <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================  
+                             news event part end
+==================================================================================== -->
+    </main>
+
+    <!-- =========================================================================  
+                              main part end
+==================================================================================== -->
+
+    <!-- =========================================================================  
+                              footer part start
+==================================================================================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="fotter-con d-flex flex-wrap">
+                <div class="fm">
+                    <h5>Address</h5>
+                    <h6>Main Campus</h6>
+                    <p>Momtaz Plaza (4th Floor)
+                        House: 07, Road: 04,
+                        Dhanmondi, Dhaka</p>
+                    <h6>Campus 2</h6>
+                    <p>Meher Plaza (3rd Floor)
+                        House: 13/A, Road: 05,
+                        Dhanmondi, Dhaka</p>
+                </div>
+                <div class="fm">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="">Vision</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Values</a></li>
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Message from CEO</a></li>
+                    </ul>
+                </div>
+                <div class="fm">
+                    <h5>Archive</h5>
+                    <ul>
+                        <li><a href="">Latest News</a></li>
+                        <li><a href="">Press Release</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Memory of Chairman</a></li>
+                    </ul>
+                </div>
+                <div class="fml">
+                    <form action="">
+                        <div class="input-effect">
+                            <input class="effect-17" type="text" placeholder="">
+                            <label>Sign up for newsletter</label>
+                            <button class="btn">SGIN UP</button>
+                            <span class="focus-border"></span>
+
+                        </div>
+                        <div class="form-end d-flex">
+                            <input type="checkbox">
+                            <p>By subscribing to our mailing list you agree to how we use your information.</p>
+                        </div>
+                    </form>
+
+                    <div class="list">
+                        <ul class="d-flex flex-wrap">
+                            <li>Hotline: 01966 177 177 </li>
+                            <li>Email: info@cbg.com.bd</li>
+                        </ul>
+                    </div>
+                    <div class="icon-part">
+                        <ul class="d-flex">
+                            <li>Follow us:</li>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <i class="bi bi-arrow-down-up"></i>
+                </div>
+            </div>
+            <div class="footer-bot mt-5">
+                <p>©2023 Creative Business Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- =========================================================================  
+                              footer part end
+==================================================================================== -->
+
+
+    <script src="./asset/js/jquery-1.12.4.min.js"> </script>
+    <script src="./asset/js/slick.min.js"> </script>
+    <script src="./asset/js/bootstrap.bundle.min.js"> </script>
+    <script src="./asset/js/jquery.nicescroll.min.js"> </script>
+    <script src="https://kit.fontawesome.com/583a2364d2.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/jquery.counterup.min.js"></script>
+    <script src="./asset/js/waypoints.min.js"></script>
+    <script src="./asset/js/venobox.min.js"></script>
+    <script src="./asset/js/script.js"> </script>
+    <script>
+        new VenoBox({
+            selector: ".venobox"
+        });
+        $('.navbar-toggler').click(function () {
+            $('.companylogo').toggle();
+        });
+        $('.navbar-toggler').click(function(){
+              $('.navbar').toggleClass("hjfg")
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counUp').counterUp({
+                delay: 5,
+                time: 1000
+            });
+        });
+        //input effect
+        $(".input-effect input").val("");
+        $(".input-effect input").focusout(function () {
+            if ($(this).val() != "") {
+                $(this).addClass("has-content");
+            } else {
+                $(this).removeClass("has-content");
+            }
+        });
+    </script>
+</body>
+
+</html>

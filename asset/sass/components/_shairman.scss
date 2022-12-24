@@ -1,0 +1,43 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#shairman {
+    margin-top: 50px;
+
+    .shair-text {
+        padding-left: 180px;
+        padding-right: 180px;
+        position: relative;
+        padding-top: 70px;
+
+        .samclon {
+            position: absolute;
+            left: 70px;
+            top: 30px;
+        }
+
+        .drag-butt {
+            position: absolute;
+            right: 7%;
+            top: 36%;
+            ;
+        }
+
+        p {
+            @include fontstyle($roboto, 18px, 400, #414042);
+        }
+
+        h2 {
+            margin-top: 30px;
+            @include fontstyle($roboto, 30px, 500, #4978BC);
+            text-transform: capitalize;
+        }
+
+        span {
+            @include fontstyle($roboto, 18px, 400, #F04E4C);
+            margin-top: 5px;
+            text-transform: capitalize;
+        }
+    }
+}

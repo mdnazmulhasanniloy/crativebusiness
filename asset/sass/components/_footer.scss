@@ -1,0 +1,159 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#footer {
+    margin-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #E6E7E8;
+
+    .fotter-con {
+        width: 100%;
+
+        .fm {
+            width: 20%;
+            margin-right: 20px;
+
+            h5 {
+                @include fontstyle($roboto, 20px, 600, #F04E4C);
+                font-style: normal;
+            }
+
+            h6 {
+                margin-top: 25px;
+                @include fontstyle($roboto, 18px, 500, #414042);
+
+            }
+
+            p {
+                margin-top: 10px;
+                @include fontstyle($roboto, 19px, 400, #414042);
+
+            }
+
+            ul {
+                margin-top: 25px;
+
+                li {
+                    margin-bottom: 15px;
+
+                    a {
+                        @include fontstyle($roboto, 18px, 400, #414042);
+                        transition: all linear 0.3s;
+
+                        -webkit-transition: all linear 0.3s;
+                        -moz-transition: all linear 0.3s;
+                        -ms-transition: all linear 0.3s;
+                        -o-transition: all linear 0.3s;
+
+                        &:hover {
+                            color: #F04E4C;
+                            font-weight: 500;
+                            margin-left: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .fml {
+            width: 35.37%;
+
+            form {
+
+                .input-effect {
+
+
+                    label {
+                        @include fontstyle($roboto, 18px, 400, #F04E4C);
+                    }
+
+                    .effect-17 {
+                        &:focus-visible {
+                            outline: 0 !important;
+                        }
+                    }
+
+                    button {
+                        width: 20%;
+                        background-color: #F04E4C;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        @include fontstyle($fatura, 16px, 500, #fff);
+                    }
+                }
+
+                .form-end {
+                    p {
+                        width: 250px;
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        @include fontstyle($roboto, 14px, 300, #414042);
+
+                    }
+
+                }
+            }
+
+            .list {
+                margin-top: 60px;
+
+                ul {
+                    li {
+                        @include fontstyle($roboto, 18px, 400, #252C6D);
+                        padding-right: 10px;
+                        margin-right: 5px;
+                    }
+
+                    li:first-child {
+                        border-right: 2px solid #F04E4C;
+                    }
+                }
+            }
+
+            .icon-part {
+                margin-top: 15px;
+
+                ul {
+                    li {
+                        @include fontstyle($roboto, 18px, 400, #252C6D);
+                        margin-right: 10px;
+
+                        a {
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            line-height: 30px;
+                            background-color: #252C6D;
+                            color: #fff;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            transition: all linear 0.3s;
+
+                            -webkit-transition: all linear 0.3s;
+                            -moz-transition: all linear 0.3s;
+                            -ms-transition: all linear 0.3s;
+                            -o-transition: all linear 0.3s;
+
+                            &:hover {
+                                background-color: #F04E4C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bot {
+        @include fontstyle($roboto, 14px, 300, #414042);
+    }
+}

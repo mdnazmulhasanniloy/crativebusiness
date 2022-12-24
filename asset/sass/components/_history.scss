@@ -1,0 +1,58 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#history {
+
+    height: 530px;
+    background-color: #252C6D;
+    margin-top: 50px;
+
+    .photo {
+        position: relative;
+
+        .img-pos {
+            position: absolute;
+            left: 10%;
+            top: 22rem;
+            z-index: 9;
+        }
+
+        .photo-1 {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 450px;
+            height: 500px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        .photo-2 {
+            position: absolute;
+            left: 20%;
+            top: 0%;
+            width: 450px;
+            height: 500px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+        }
+    }
+
+    .history-text {
+        padding: 90px 0px;
+
+        p {
+            @include fontstyle($fatura, 30px, 500, #fff);
+
+            span {
+                margin-top: 28px;
+                display: inline-block;
+                @include fontstyle($fatura, 25px, 300, #fff);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#counter {
+    padding: 150px 0px;
+    background-color: #252C6D;
+
+    .content {
+        .logo {
+            width: 95px;
+            height: 95px;
+            background-color: #F04E4C;
+            line-height: 95px;
+            text-align: center;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+
+            li {
+                @include fontstyle($roboto, 25px, 400, #4978BC);
+            }
+
+            li:last-child {
+
+                @include fontstyle($roboto, 45px, 500, #fff);
+
+            }
+
+        }
+    }
+}

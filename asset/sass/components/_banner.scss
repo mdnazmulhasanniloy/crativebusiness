@@ -1,0 +1,97 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#banner {
+    margin-top: 116px;
+
+    .baner-first {
+
+        h1 {
+            @include fontstyle($fatura, 55px, 700, #252C6D);
+            line-height: 70px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 20px;
+            @include fontstyle($roboto, 20px, 400, #414042);
+            line-height: 30px;
+        }
+
+        a {
+            @include fontstyle($roboto, 20px, 500, #4978BC);
+            margin-top: 30px;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transition: transform 0.3s ease;
+            -webkit-transition: transform 0.3s ease;
+            -moz-transition: transform 0.3s ease;
+            -ms-transition: transform 0.3s ease;
+            -o-transition: transform 0.3s ease;
+
+            i {
+                color: red;
+                transition: transform 0.3s ease;
+                -webkit-transition: transform 0.3s ease;
+                -moz-transition: transform 0.3s ease;
+                -ms-transition: transform 0.3s ease;
+                -o-transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+
+                i {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    .baner-photo {
+        position: relative;
+
+        .play {
+            position: absolute;
+            left: 64%;
+            top: 38%;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #4979bcc3;
+
+            i {
+                color: #fff;
+            }
+
+            &:hover {
+
+                background-color: #4979bc84;
+
+            }
+        }
+
+        .ban-phot {
+            position: absolute;
+            right: -19%;
+            top: -33%;
+            z-index: -1;
+        }
+    }
+}
