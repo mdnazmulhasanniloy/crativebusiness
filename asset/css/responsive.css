@@ -432,19 +432,19 @@ margin-top: 15px;
   #navbar .navbar-toggler:focus {
     box-shadow: 0 0 0 0;
   }
+  #navbar ul{
+    justify-content: center;
+    height: 100vh;
+  }
   #navbar ul li {
     margin-left: 0px;
-    line-height: 57px;
+    line-height: 40px;
   }
   #navbar ul li:hover a{
      color: #fff;
   }
   #navbar ul li a.active{
     color: #fff;
-  }
-  #navber .navbar-nav {
-    margin-bottom: 0 !important;
-    height: 100vh;
   }
 
   /* navver end */
