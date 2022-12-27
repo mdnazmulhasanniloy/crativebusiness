@@ -214,6 +214,11 @@
   #navbar .navbar-toggler:focus {
     box-shadow: 0 0 0 0;
   }
+  #navbar ul{
+    justify-content: center !important;
+    height: 100vh;
+    margin-left: 0 !important;
+  }
   #navbar ul li {
     margin-left: 0px;
     line-height: 57px;
@@ -223,10 +228,6 @@
   }
   #navbar ul li a.active{
     color: #fff;
-  }
-  #navber .navbar-nav {
-    margin-bottom: 0 !important;
-    height: 100vh;
   }
   /* navver end */
   #banner {
