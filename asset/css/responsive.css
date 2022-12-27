@@ -433,8 +433,9 @@ margin-top: 15px;
     box-shadow: 0 0 0 0;
   }
   #navbar ul{
-    justify-content: center;
+    justify-content: center !important;
     height: 100vh;
+    margin-left: 0 !important;
   }
   #navbar ul li {
     margin-left: 0px;
